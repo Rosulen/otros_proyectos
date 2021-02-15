@@ -53,14 +53,14 @@ def procesar_respuesta(mensaje):
 
     random_no = random.randrange(3)
     if "?" in str(mensaje).lower():
-        return "Nada de preguntas, solo besame"
+        return "Ahora no puedo contestar."
     else:
         if random_no == 0:
-            return "La verdad no se"
+            return "Hola, buenos días"
         elif random_no == 1:
-            return "¿Que fue? :v"
+            return "Estoy ocupada"
         else:
-            return "Tengo mucha hambre :("
+            return "Ok gracias"
     
 procesando_respuesta = procesar_respuesta(get_message())
 respuesta(procesando_respuesta)
